@@ -243,6 +243,6 @@ const disableselect = (e) => {
   return false;
 };
 document.onselectstart = disableselect;
-document.addEventListener("touchmove", (e) => {
-  e.preventDefault();
-});
+window.onscroll = () => {
+  window.scrollTo(0,0)
+}
