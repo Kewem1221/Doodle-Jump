@@ -240,6 +240,5 @@ const app = new App();
 app.run();
 
 // Disable scroll
-window.onscroll = () => {
-  window.scrollTo({ left: 0, top: 0 });
+window.onscroll = () => false;
 };
