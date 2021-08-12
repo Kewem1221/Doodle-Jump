@@ -239,6 +239,8 @@ class App {
 const app = new App();
 app.run();
 
-// Disable scroll
-window.onscroll = () => false;
+const disableselect = (e) => {
+  return false;
 };
+
+document.onselectstart = disableselect;
