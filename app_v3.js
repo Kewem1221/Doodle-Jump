@@ -242,5 +242,8 @@ app.run();
 const disableselect = (e) => {
   return false;
 };
-
 document.onselectstart = disableselect;
+
+window.addEventListener("scroll", (e) => {
+  e.preventDefault();
+});
